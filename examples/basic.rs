@@ -1,6 +1,10 @@
 
 // use std::env;
+// use linode::*;
 
 fn main() {
-  println!("Eventually this will be a basic demo of the Linode library");
+  
+  linode::set_access_token();
+  linode::get_account();
+
 }

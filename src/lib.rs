@@ -1,7 +1,10 @@
-pub fn set_access_token(left: usize, right: usize) -> usize {
-    left + right
+pub fn set_access_token() {
+    println!("set_access_token called")
 }
 
+pub fn get_account() {
+    
+}
 #[cfg(test)]
 mod tests {
     use super::*;
