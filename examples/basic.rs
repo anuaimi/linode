@@ -1,10 +1,11 @@
 
-// use std::env;
-// use linode::*;
+use linode::LinodeAPI;
 
 fn main() {
   
-  linode::set_access_token();
-  linode::get_account();
+  let access_token= "at-184832";
+  let api = LinodeAPI::new(access_token);
+
+  api.get_account();
 
 }
